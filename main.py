@@ -11,7 +11,8 @@ while True:
     CMD = CMD.lower()
     
     if CMD == "help" or CMD == "list" or CMD == "what can i do":
-        print(help)
+        for item in help:
+            print(item)
     elif CMD == "test":
         print ("It works!")
     # אומר שהוא עובד אם אתה שואל אותו
