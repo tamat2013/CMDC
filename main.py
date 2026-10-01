@@ -3,7 +3,7 @@ import random
 import math
 import datetime
 
-help = "Available Commands:\ntest\ngo to sleep\nchoose: rnd\nchoose: pi\nchoose: ans\nchoose: max\nchoose: min\n"
+help = ["test", "go to sleep", "choose: rnd", "choose: pi", "choose: ans", "choose: max", "choose: min"]
 timecheck = False
 
 while True:
