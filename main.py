@@ -3,7 +3,7 @@ import random
 import math
 import datetime
 
-help = ["test", "go to sleep", "choose: rnd", "choose: pi", "choose: ans", "choose: max", "choose: min"]
+help = ["test", "go to sleep", "choose: rnd", "choose: pi", "choose: ans", "choose: max", "choose: min" , "date", "update"]
 timecheck = False
 
 while True:
@@ -21,8 +21,9 @@ while True:
         while True:
              CMD = input("")
              if CMD == "wake up!":
+                 print("\nI'm awake")
                  break
-    # מתחיל סיום פרקטי בעת בקשה
+    # מרדים ומעיר
     elif CMD == "choose: rnd":
         print (random.randint(-1000000000,1000000000)/1000000)
     elif CMD == "choose: pi":
@@ -32,13 +33,14 @@ while True:
     elif CMD == "choose: max":
        print(random.randint(100000,999999))
     elif CMD == "choose: min":
-       print(random.randint(-100000,-999999))
+       print(random.randint(-100000, -999999))
        #מרנדם מספרים
     elif CMD == "date":
         print (datetime.datetime.now())
         timecheck = True 
     elif CMD == "update" and timecheck:
         print("Updating...")
+        time.sleep(1)
         print (datetime.datetime.now())
     else: 
         print ("I haven't been programmed to proccess this yet\n(tip* type: help)")
