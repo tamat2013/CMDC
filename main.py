@@ -8,9 +8,7 @@ timecheck = False
 
 while True:
     CMD = input("CMD: ")
-    .
-    .
-    .
+
     CMD = CMD.lower()
     
     if CMD == "help" or CMD == "list" or CMD == "what can i do":
