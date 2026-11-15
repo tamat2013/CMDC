@@ -30,7 +30,7 @@ while True:
     elif CMD == "choose: pi":
         print (round(math.pi,6))
     elif CMD == "choose: ans":
-       print(f"42.{random.randint(0,1000000)}")
+       print("42.{random.randint(0,1000000)}")
     elif CMD == "choose: max":
        print(random.randint(100000,999999))
     elif CMD == "choose: min":
